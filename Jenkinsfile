@@ -21,6 +21,10 @@ pipeline {
                   steps {
                         echo "Deploying in Production Area"
                   }
+             stage('Test Step') {
+                               steps {
+                                     echo "This step is just for test"
+                               }
             }
       }
 }
